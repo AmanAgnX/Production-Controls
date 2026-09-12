@@ -2,202 +2,296 @@
 PrSM 
 # Aerospace Production Controls & Labor Analysis
 
-**Aerospace & Defense | Program Finance | Production Controls**
+*Aerospace & Defense | Program Finance | Production Controls | Labor Analysis*
 
-> A sanitized case study demonstrating how production standards, labor hours,
-> manufacturing operations, and efficiency metrics can be structured to support
-> program-finance and operational decision-making.
+> A sanitized case study demonstrating how manufacturing standards, labor requirements, production performance, and operational variance can be translated into program-finance and management information.
 
 ---
 
 ## Overview
 
-This project presents a production-control framework developed from professional
-experience supporting aerospace and defense manufacturing programs.
+This project presents a production-control and labor-analysis framework developed from professional experience supporting aerospace and defense manufacturing programs.
 
-The analysis connects individual manufacturing and assembly operations with
-standard production times, labor requirements, production capacity, and
-financial performance.
+Manufacturing programs require visibility into how planned production requirements translate into individual operations, labor hours, capacity requirements, actual performance, and ultimately financial results.
 
-The objective is to translate shop-floor activity into measurable operational
-and financial information that can support production planning, labor analysis,
-cost control, forecasting, and program-level decision-making.
+The analysis connects operational routing, standard production requirements, actual labor activity, efficiency, variance, throughput, and capacity with program-finance considerations.
+
+The objective is to translate shop-floor activity into measurable operational and financial information that can support production planning, labor control, forecasting, and program-level decision-making.
+
+---
+
+## Business Problem
+
+Aerospace manufacturing programs operate through large sequences of individual production and assembly operations.
+
+Each operation consumes labor, production capacity, and time. Differences between established production standards and realized performance can create downstream effects on cost, schedule, throughput, and program forecasts.
+
+Several questions therefore become financially important:
+
+* How many labor hours should production require?
+* How many labor hours were actually consumed?
+* Where are actual hours deviating from standards?
+* Which operations are creating labor inefficiencies?
+* Where are capacity constraints developing?
+* How are production deviations affecting program cost?
+* How should current performance affect the forward forecast?
+
+The objective was to structure production information so operational performance could be evaluated against established standards and translated into financially relevant program information.
 
 ---
 
 ## Production Control Architecture
 
-                    PROGRAM DEMAND
-                          │
-                          ▼
-                   PRODUCTION PLAN
-                          │
-                          ▼
-                 PRODUCT / ASSEMBLY
-                          │
-                          ▼
-                OPERATIONAL ROUTING
-                          │
-            ┌─────────────┴─────────────┐
-            ▼                           ▼
-     PRODUCTION STATION          STANDARD HOURS
-            │                           │
-            ▼                           ▼
-      ACTUAL OUTPUT              LABOR REQUIREMENT
-            │                           │
-            └─────────────┬─────────────┘
-                          ▼
-                 PRODUCTION PERFORMANCE
-                          │
-              ┌───────────┼───────────┐
-              ▼           ▼           ▼
-          EFFICIENCY    CAPACITY    VARIANCE
-              │           │           │
-              └───────────┼───────────┘
-                          ▼
-                   FINANCIAL IMPACT
-                          │
-                          ▼
-                PROGRAM FORECASTING
-                          │
-                          ▼
-                 MANAGEMENT REVIEW
+```text
+                 PROGRAM DEMAND
+                       │
+                       ▼
+                PRODUCTION PLAN
+                       │
+                       ▼
+              PRODUCT / ASSEMBLY
+                       │
+                       ▼
+             OPERATIONAL ROUTING
+                       │
+          ┌────────────┴────────────┐
+          ▼                         ▼
+   PRODUCTION STATION         STANDARD HOURS
+          │                         │
+          ▼                         ▼
+   ACTUAL LABOR HOURS        LABOR REQUIREMENT
+          │                         │
+          └────────────┬────────────┘
+                       ▼
+              STANDARD VS. ACTUAL
+                       │
+            ┌──────────┼──────────┐
+            ▼          ▼          ▼
+        EFFICIENCY   VARIANCE   THROUGHPUT
+            │          │          │
+            └──────────┼──────────┘
+                       ▼
+                CAPACITY ANALYSIS
+                       │
+                       ▼
+                  COST IMPACT
+                       │
+                       ▼
+               PROGRAM FORECAST
+                       │
+                       ▼
+                MANAGEMENT REVIEW
+```
 
 ---
 
-## My Contribution
+## What I Built
 
-The work involved supporting production-control and program-finance analysis
-across aerospace and defense manufacturing activity.
+The work involved supporting production-control and program-finance analysis across aerospace and defense manufacturing activity.
 
-Key areas included:
+Key components included:
 
-- Structuring production operations by product and manufacturing station
-- Analyzing standard production and labor-hour requirements
-- Connecting manufacturing activity with labor utilization
-- Evaluating production efficiency and operational performance
-- Supporting labor and capacity planning
-- Identifying deviations between production standards and performance
-- Organizing production information for financial and management review
-- Connecting operational performance with program-finance considerations
+* Structuring manufacturing activity by product and production station
+* Mapping operational routing
+* Analyzing standard production requirements
+* Analyzing standard labor-hour requirements
+* Comparing standard and actual labor performance
+* Evaluating labor utilization
+* Identifying production and labor variance
+* Evaluating production efficiency
+* Supporting capacity analysis
+* Identifying potential operational bottlenecks
+* Connecting production performance with labor cost
+* Structuring production information for program forecasts
+* Organizing operational and financial information for management review
 
 ---
 
-## Finance & Analytical Skills
+## Production Performance Framework
 
-| Skill | Application |
-|---|---|
-| **Program Finance** | Connected manufacturing activity with program financial performance |
-| **Production Controls** | Structured production operations, standards, and performance measures |
-| **Labor Analysis** | Evaluated standard hours, labor requirements, and utilization |
-| **Cost Analysis** | Connected production activity with underlying labor and operating costs |
-| **Variance Analysis** | Evaluated differences between expected and realized performance |
-| **Capacity Analysis** | Assessed production requirements relative to available resources |
-| **Forecasting** | Used production information to support forward-looking program analysis |
-| **Operational Finance** | Translated shop-floor activity into financially relevant information |
-| **Process Mapping** | Structured manufacturing workflows into an analytical framework |
+The core analytical relationship compares expected production requirements with realized manufacturing performance.
+
+```text
+Production Demand
+        ↓
+Operational Routing
+        ↓
+Standard Labor Requirement
+        ↓
+Actual Labor Consumption
+        ↓
+Variance Analysis
+        ↓
+Efficiency / Capacity Analysis
+        ↓
+Cost Impact
+        ↓
+Program Forecast
+```
+
+At the operation level:
+
+**Labor Variance = Actual Labor Hours − Standard Labor Hours**
+
+A positive variance indicates that an operation consumed more labor than the established standard, while a negative variance indicates lower labor consumption relative to the standard.
+
+Production information can then be aggregated across operations, stations, products, or programs to identify broader performance patterns.
 
 ---
 
 ## Analytical Framework
 
-### 1. Production Routing
+### Production Routing
 
-Manufacturing requirements are decomposed into individual operations and
-production stations, establishing the sequence of work required to complete
-a product or assembly.
+Manufacturing requirements are decomposed into individual operations and production stations.
 
-### 2. Labor Standards
+This establishes the sequence of work required to complete a product or assembly and creates the foundation for measuring production performance.
 
-Each operation can be associated with standardized production and labor
-requirements, creating a baseline for evaluating resource requirements and
-production performance.
+### Labor Standards
 
-### 3. Production Performance
+Each operation can be associated with an established production time and labor requirement.
 
-Actual production activity can be compared with established standards to
-evaluate efficiency, labor utilization, throughput, and operational variance.
+Standard hours provide a baseline for:
 
-### 4. Capacity & Resource Analysis
+* Labor planning
+* Capacity requirements
+* Cost expectations
+* Production performance measurement
 
-Production requirements can be translated into labor and capacity needs,
-helping identify resource constraints and potential production bottlenecks.
+### Standard vs. Actual Analysis
 
-### 5. Financial Integration
+Actual labor activity can be compared against established standards to identify deviations in production performance.
 
-Production performance ultimately affects labor cost, unit economics,
-program forecasts, and financial performance, allowing operational information
-to support program-finance decision-making.
+```text
+Standard Hours
+      vs.
+Actual Hours
+       ↓
+Labor Variance
+```
 
----
+This creates visibility into where additional labor is being consumed and where operational performance differs from the expected production model.
 
-## Core Analytical Flow
+### Production Efficiency
 
-**Production Demand**
+Labor and production information can be evaluated across operations and manufacturing stations to identify relative efficiency and performance.
 
-→ Operational Routing  
-→ Standard Production Requirements  
-→ Standard Labor Requirements  
-→ Actual Production Performance  
-→ Efficiency & Variance Analysis  
-→ Labor / Capacity Requirements  
-→ Cost Impact  
-→ Program Forecast
+Changes in labor efficiency can influence:
+
+* Unit cost
+* Production capacity
+* Delivery performance
+* Program cost
+* Forward forecasts
+
+### Capacity Analysis
+
+Production demand can be translated into labor and resource requirements.
+
+Comparing required capacity with available capacity provides visibility into potential constraints, bottlenecks, and production pressure.
+
+### Financial Integration
+
+Production performance ultimately affects program economics.
+
+```text
+Production Performance
+        ↓
+Labor Consumption
+        ↓
+Labor Cost
+        ↓
+Unit Economics
+        ↓
+Program Cost
+        ↓
+Forecast
+```
+
+This allows operational information to become an input into program-finance analysis rather than remaining isolated within manufacturing reporting.
 
 ---
 
 ## Key Metrics
 
-| Metric | Purpose |
-|---|---|
-| **Standard Production Time** | Establishes expected production requirements |
-| **Standard Labor Hours** | Establishes expected labor consumption |
-| **Actual Labor Hours** | Measures realized labor usage |
-| **Production Efficiency** | Compares realized performance with established standards |
-| **Labor Variance** | Identifies deviations from expected labor requirements |
-| **Throughput** | Measures production output over time |
-| **Capacity Utilization** | Evaluates resource usage relative to available capacity |
+| **Metric**               | **Management / Financial Relevance**                                     |
+| ------------------------ | ------------------------------------------------------------------------ |
+| Standard Production Time | Establishes expected production requirements                             |
+| Standard Labor Hours     | Establishes expected labor consumption                                   |
+| Actual Labor Hours       | Measures realized labor usage                                            |
+| Labor Variance           | Identifies deviations from established labor requirements                |
+| Production Efficiency    | Evaluates performance relative to standards                              |
+| Labor Utilization        | Measures deployment of available labor resources                         |
+| Throughput               | Measures production output over time                                     |
+| Capacity Requirement     | Estimates resources required to meet production demand                   |
+| Capacity Utilization     | Evaluates resource usage relative to available capacity                  |
+| Cost Impact              | Translates operational performance into financial consequences           |
+| Forecast Requirement     | Connects current production performance with future program expectations |
 
 ---
 
-## Tools & Methods
+## Program Control Framework
 
-**Excel** · **Financial Modeling** · **Production Analysis** ·
-**Labor Analysis** · **Variance Analysis** · **Program Controls** ·
-**Process Mapping**
+The production-control system creates traceability between manufacturing execution and program financial performance.
+
+```text
+Program Demand
+→ Production Routing
+→ Standard Hours
+→ Actual Hours
+→ Variance
+→ Efficiency
+→ Capacity
+→ Cost
+→ Forecast
+→ Management Review
+```
+
+This allows program teams to identify where operating performance may be creating emerging cost or schedule pressure.
 
 ---
 
-## Business Value
+## Business Impact
 
-The framework creates a bridge between manufacturing execution and financial
-performance.
+The framework creates a bridge between manufacturing execution and program-finance performance.
 
-It provides visibility into how changes in production efficiency, labor
-requirements, capacity, and operating performance can affect:
+It provides visibility into how changes in:
+
+* Production requirements
+* Labor consumption
+* Efficiency
+* Throughput
+* Capacity
+* Operational variance
+
+can affect:
 
 **Production → Labor → Cost → Margin → Forecast → Program Performance**
 
-This allows operational information to become an input into program-finance
-and management decision-making.
+This allows production information to support labor planning, cost control, capacity analysis, forecasting, and management decision-making.
 
 ---
 
-## Repository Structure
+## Skills Demonstrated
 
-```text
-aerospace-production-controls/
-│
-├── README.md
-│
-├── models/
-│   └── synthetic-production-control-model.xlsx
-│
-├── architecture/
-│   └── production-control-architecture.png
-│
-├── analysis/
-│   └── efficiency-and-labor-analysis.md
-│
-└── documentation/
-    └── methodology.md
+Program Finance · Production Controls · Labor Analysis · Variance Analysis · Capacity Analysis · Cost Analysis · Forecasting · Operational Finance · Financial Controls · Process Mapping
+
+**Tools:** Excel · Financial Modeling · Production Analysis · Labor Analysis · Variance Analysis · Program Controls · Process Mapping
+
+---
+
+## Repository Contents
+
+`/models` — Sanitized labor and production-analysis models
+`/architecture` — Production-control and process-flow diagrams
+`/documentation` — Supporting methodology and analytical framework
+`/assets` — Charts, variance analysis, and visual outputs
+
+---
+
+## Confidentiality
+
+This portfolio case study contains sanitized and/or reconstructed information for demonstration purposes.
+
+No proprietary, classified, export-controlled, customer-sensitive, or company-confidential information is included.
+
