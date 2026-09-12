@@ -3,20 +3,17 @@ PrSM
 # Aerospace Production Controls & Labor Analysis
 
 *Aerospace & Defense | Program Finance | Production Controls | Labor Analysis*
-
-> A sanitized case study demonstrating how manufacturing standards, labor requirements, production performance, and operational variance can be translated into program-finance and management information.
-
 ---
 
 ## Overview
 
-This project presents a production-control and labor-analysis framework developed from professional experience supporting aerospace and defense manufacturing programs.
+This project presents a production-control and program-finance framework developed from professional experience supporting the Precision Strike Missile (PrSM) program, a Lockheed Martin missile program for the U.S. Army.
 
-Manufacturing programs require visibility into how planned production requirements translate into individual operations, labor hours, capacity requirements, actual performance, and ultimately financial results.
+The work involved analyzing manufacturing and assembly activity across production operations, including standard production times, labor-hour requirements, actual labor performance, efficiency, capacity, and operational variance.
 
-The analysis connects operational routing, standard production requirements, actual labor activity, efficiency, variance, throughput, and capacity with program-finance considerations.
+The analysis connected shop-floor execution with program-finance considerations by evaluating how production performance and labor utilization could affect cost, capacity requirements, forecasting, and overall program performance.
 
-The objective is to translate shop-floor activity into measurable operational and financial information that can support production planning, labor control, forecasting, and program-level decision-making.
+The objective was to translate detailed manufacturing activity into structured operational and financial information for production planning, program controls, and management review.
 
 ---
 
